@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Study Portal</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <header>
+        <nav>
+            <h2>📚 StudyHub</h2>
+
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#subjects">Subjects</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="home" class="hero">
+        <div>
+            <h1>Welcome to StudyHub</h1>
+            <p>Your simple online platform for better learning.</p>
+            <button onclick="showMessage()">Start Learning</button>
+        </div>
+    </section>
+
+    <section id="about">
+        <h2>About StudyHub</h2>
+        <p>
+            StudyHub is a student-friendly website designed to help students
+            organize their studies and learn different subjects easily.
+        </p>
+    </section>
+
+    <section id="subjects">
+        <h2>Our Subjects</h2>
+
+        <div class="cards">
+
+            <div class="card">
+                <h3>💻 Internet & Web Technology</h3>
+                <p>Learn HTML, CSS, JavaScript and web development.</p>
+                <button onclick="learn('Internet & Web Technology')">
+                    Learn More
+                </button>
+            </div>
+
+            <div class="card">
+                <h3>🐍 Python</h3>
+                <p>Learn programming concepts and Python basics.</p>
+                <button onclick="learn('Python')">
+                    Learn More
+                </button>
+            </div>
+
+            <div class="card">
+                <h3>🗄️ DBMS</h3>
+                <p>Learn databases, SQL and database management.</p>
+                <button onclick="learn('DBMS')">
+                    Learn More
+                </button>
+            </div>
+
+        </div>
+    </section>
+
+    <section id="contact">
+        <h2>Contact Us</h2>
+
+        <form onsubmit="submitForm(event)">
+
+            <input type="text" id="name" placeholder="Enter your name" required>
+
+            <input type="email" id="email" placeholder="Enter your email" required>
+
+            <textarea id="message" placeholder="Write your message" required></textarea>
+
+            <button type="submit">Submit</button>
+
+        </form>
+
+        <p id="result"></p>
+    </section>
+
+    <footer>
+        <p>© 2026 StudyHub | Internet & Web Technology Project</p>
+    </footer>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
